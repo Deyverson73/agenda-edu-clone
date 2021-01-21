@@ -11,7 +11,7 @@ import {
   Infos,
 } from './styles';
 
-export interface IEventCard {
+export interface IEvent {
   id: string;
   image_url: string;
   category: string;
@@ -19,7 +19,7 @@ export interface IEventCard {
   info: string;
 }
 
-const EventCard = ({ item }: { item: IEventCard }) => {
+const EventCard = ({ item }: { item: IEvent }) => {
   return (
     <Container>
       <EventImage

@@ -5,14 +5,14 @@ import { ThemeProvider } from 'styled-components/native';
 import colors from '../src/Constants/Colors';
 import renderer from 'react-test-renderer';
 import fetch from 'node-fetch';
-import EventCard, { IEventCard } from '../src/Components/EventCard';
+import EventCard, { IEvent } from '../src/Components/EventCard';
 
 // Fix useNativeDriver warning
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
-jest.useFakeTimers();
 jest.setTimeout(30000);
+jest.useFakeTimers();
 
-const items: IEventCard[] = [
+const items: IEvent[] = [
   {
     id: '1',
     image_url:
@@ -39,7 +39,7 @@ const items: IEventCard[] = [
   },
 ];
 
-for (const item of items) {
+export const eventTest = async (item: IEvent) => {
   const tree = renderer.create(
     <ThemeProvider theme={colors.light}>
       <EventCard item={item} />
@@ -47,34 +47,30 @@ for (const item of items) {
   );
 
   // Verifica se o arquivo retornado é um arquivo de imagem
-  test('Test Image', async () => {
-    await fetch(item.image_url, { method: 'GET' }).then(async (response) => {
-      const result = await response.blob();
-      expect(result.type).toContain('image');
-    });
+  await fetch(item.image_url, { method: 'GET' }).then(async (response) => {
+    const result = await response.blob();
+    expect(result.type).toContain('image');
 
     const image = tree.root.findByProps({ testID: 'EventCard:Image' }).props;
     expect(image).toBeDefined();
-  });
 
-  // Verifica se os atributos existem e se a saída é igual a entrada
-  test('Test Category', () => {
+    // Verifica se os atributos existem e se a saída é igual a entrada
     const category = tree.root.findByProps({ testID: 'EventCard:Category' })
       .props;
     expect(category.children.trim()).not.toBe('');
     expect(category.children).toEqual(item.category);
-  });
 
-  test('Test Title', () => {
     const title = tree.root.findByProps({ testID: 'EventCard:Title' }).props;
     expect(title.children.trim()).not.toBe('');
     expect(title.children).toEqual(item.title);
-  });
 
-  test('Test Infos', () => {
     const infos = tree.root.findByProps({ testID: 'EventCard:Infos' }).props;
     expect(infos.children[2].trim()).not.toBe('');
     expect(infos.children[2]).toEqual(item.info);
+    //
   });
+};
+
+for (const item of items) {
+  test(`EventCard Test ${item.title}`, () => eventTest(item));
 }
-//

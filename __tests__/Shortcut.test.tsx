@@ -18,7 +18,8 @@ const url_images = [
   'https://play-lh.googleusercontent.com/9f2xzforyaQz1yoRSiS5Mj5r2z7gh2FCzWAl3Uo-2wUrS2bsDWHSEyq5zDylp1gndw=s180-rw',
 ];
 
-for (const url of url_images) {
+// Verifica se o arquivo retornado é um arquivo de imagem
+export const shortcutTest = async (url: string) => {
   const tree = renderer.create(
     <ThemeProvider theme={colors.light}>
       <ShortcutCard image_url={url} />
@@ -26,13 +27,15 @@ for (const url of url_images) {
   );
 
   // Verifica se o arquivo retornado é um arquivo de imagem
-  test('Test Image', async () => {
-    await fetch(url, { method: 'GET' }).then(async (response) => {
-      const result = await response.blob();
-      expect(result.type).toContain('image');
-    });
-
-    const image = tree.root.findByProps({ testID: 'ShortcutCard:Image' }).props;
-    expect(image).toBeDefined();
+  await fetch(url, { method: 'GET' }).then(async (response) => {
+    const result = await response.blob();
+    expect(result.type).toContain('image');
   });
+
+  const image = tree.root.findByProps({ testID: 'ShortcutCard:Image' }).props;
+  expect(image).toBeDefined();
+};
+
+for (const url of url_images) {
+  test('Shortcut Test Image', async () => shortcutTest(url));
 }

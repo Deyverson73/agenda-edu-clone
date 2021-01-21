@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test App 1`] = `
+exports[`App Snapshot 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
@@ -149,7 +149,9 @@ exports[`Test App 1`] = `
                       ]
                     }
                   >
-                    Olá, Agenda Edu 👋
+                    Olá, 
+                    Agenda Edu
+                     👋
                   </Text>
                   <Text
                     style={
@@ -1000,8 +1002,53 @@ exports[`Test App 1`] = `
                       "paddingVertical": 15.694117647058823,
                     }
                   }
+                  data={
+                    Array [
+                      Object {
+                        "counter": 1,
+                        "icon": Object {
+                          "lib": "MaterialCommunityIcons",
+                          "name": "pencil-outline",
+                        },
+                        "title": "Atividades",
+                      },
+                      Object {
+                        "counter": 0,
+                        "icon": Object {
+                          "lib": "Ionicons",
+                          "name": "megaphone-outline",
+                        },
+                        "title": "Comunicados",
+                      },
+                      Object {
+                        "counter": 3,
+                        "icon": Object {
+                          "lib": "Feather",
+                          "name": "calendar",
+                        },
+                        "title": "Eventos",
+                      },
+                    ]
+                  }
+                  disableVirtualization={false}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
                   horizontal={true}
+                  initialNumToRender={10}
+                  keyExtractor={[Function]}
+                  maxToRenderPerBatch={10}
+                  onContentSizeChange={[Function]}
+                  onEndReachedThreshold={2}
+                  onLayout={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={50}
                   showsHorizontalScrollIndicator={false}
+                  stickyHeaderIndices={Array []}
                   style={
                     Array [
                       Object {
@@ -1009,349 +1056,389 @@ exports[`Test App 1`] = `
                       },
                     ]
                   }
+                  testID="Home:OptionList"
+                  updateCellsBatchingPeriod={50}
+                  viewabilityConfigCallbackPairs={Array []}
+                  windowSize={21}
                 >
                   <View>
                     <View
-                      accessible={true}
-                      focusable={true}
-                      onClick={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
+                      onLayout={[Function]}
                       style={
                         Array [
                           Object {
-                            "borderRadius": 10.714285714285714,
-                            "marginRight": 32.14285714285714,
+                            "flexDirection": "row",
                           },
+                          null,
                         ]
                       }
                     >
                       <View
-                        elevation={6}
+                        accessible={true}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Array [
                             Object {
-                              "backgroundColor": "#FFFFFF",
                               "borderRadius": 10.714285714285714,
-                              "minWidth": 203.57142857142856,
-                              "paddingBottom": 25.714285714285715,
-                              "paddingLeft": 25.714285714285715,
-                              "paddingRight": 25.714285714285715,
-                              "paddingTop": 25.714285714285715,
+                              "marginRight": 32.14285714285714,
                             },
                           ]
                         }
                       >
                         <View
+                          elevation={6}
                           style={
                             Array [
                               Object {
-                                "flexDirection": "row",
-                                "justifyContent": "space-between",
+                                "backgroundColor": "#FFFFFF",
+                                "borderRadius": 10.714285714285714,
+                                "minWidth": 203.57142857142856,
+                                "paddingBottom": 25.714285714285715,
+                                "paddingLeft": 25.714285714285715,
+                                "paddingRight": 25.714285714285715,
+                                "paddingTop": 25.714285714285715,
                               },
                             ]
                           }
                         >
-                          <Text
-                            allowFontScaling={false}
-                            lib="MaterialCommunityIcons"
+                          <View
                             style={
                               Array [
                                 Object {
-                                  "color": "#A1A1A1",
-                                  "fontSize": 12,
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
                                 },
+                              ]
+                            }
+                          >
+                            <Text
+                              allowFontScaling={false}
+                              lib="MaterialCommunityIcons"
+                              style={
                                 Array [
                                   Object {
-                                    "fontSize": 24,
+                                    "color": "#A1A1A1",
+                                    "fontSize": 12,
                                   },
-                                ],
-                                Object {
-                                  "fontFamily": "Material Design Icons",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                                Object {},
-                              ]
-                            }
-                            testID="OptionsCard:IconCard"
-                          >
-                            󰲶
-                          </Text>
-                          <Text
+                                  Array [
+                                    Object {
+                                      "fontSize": 24,
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "Material Design Icons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                  Object {},
+                                ]
+                              }
+                              testID="OptionsCard:IconCard"
+                            >
+                              󰲶
+                            </Text>
+                            <Text
+                              style={
+                                Array [
+                                  Object {},
+                                  Object {
+                                    "backgroundColor": "#7D42D7",
+                                    "borderRadius": 100,
+                                    "color": "#ffffff",
+                                    "fontFamily": "Quicksand-Regular",
+                                    "fontSize": 18,
+                                    "fontWeight": "normal",
+                                    "paddingBottom": 3.2142857142857144,
+                                    "paddingLeft": 12.857142857142858,
+                                    "paddingRight": 12.857142857142858,
+                                    "paddingTop": 3.2142857142857144,
+                                  },
+                                ]
+                              }
+                              testID="OptionsCard:Counter"
+                            >
+                              1
+                            </Text>
+                          </View>
+                          <View
                             style={
                               Array [
-                                Object {},
                                 Object {
-                                  "backgroundColor": "#7D42D7",
-                                  "borderRadius": 100,
-                                  "color": "#ffffff",
-                                  "fontFamily": "Quicksand-Regular",
-                                  "fontSize": 18,
-                                  "fontWeight": "normal",
-                                  "paddingBottom": 3.2142857142857144,
-                                  "paddingLeft": 12.857142857142858,
-                                  "paddingRight": 12.857142857142858,
-                                  "paddingTop": 3.2142857142857144,
+                                  "marginTop": 29.426470588235293,
                                 },
                               ]
                             }
-                            testID="OptionsCard:Counter"
                           >
-                            1
-                          </Text>
-                        </View>
-                        <View
-                          style={
-                            Array [
-                              Object {
-                                "marginTop": 29.426470588235293,
-                              },
-                            ]
-                          }
-                        >
-                          <Text
-                            style={
-                              Array [
-                                Object {},
-                                Object {
-                                  "color": "#A1A1A1",
-                                  "fontFamily": "Quicksand-Regular",
-                                  "fontSize": 20,
-                                  "fontWeight": "normal",
-                                },
-                              ]
-                            }
-                            testID="OptionsCard:Title"
-                          >
-                            Atividades
-                          </Text>
+                            <Text
+                              style={
+                                Array [
+                                  Object {},
+                                  Object {
+                                    "color": "#A1A1A1",
+                                    "fontFamily": "Quicksand-Regular",
+                                    "fontSize": 20,
+                                    "fontWeight": "normal",
+                                  },
+                                ]
+                              }
+                              testID="OptionsCard:Title"
+                            >
+                              Atividades
+                            </Text>
+                          </View>
                         </View>
                       </View>
                     </View>
                     <View
-                      accessible={true}
-                      focusable={true}
-                      onClick={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
+                      onLayout={[Function]}
                       style={
                         Array [
                           Object {
-                            "borderRadius": 10.714285714285714,
-                            "marginRight": 32.14285714285714,
+                            "flexDirection": "row",
                           },
+                          null,
                         ]
                       }
                     >
                       <View
-                        elevation={6}
+                        accessible={true}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Array [
                             Object {
-                              "backgroundColor": "#FFFFFF",
                               "borderRadius": 10.714285714285714,
-                              "minWidth": 203.57142857142856,
-                              "paddingBottom": 25.714285714285715,
-                              "paddingLeft": 25.714285714285715,
-                              "paddingRight": 25.714285714285715,
-                              "paddingTop": 25.714285714285715,
+                              "marginRight": 32.14285714285714,
                             },
                           ]
                         }
                       >
                         <View
+                          elevation={6}
                           style={
                             Array [
                               Object {
-                                "flexDirection": "row",
-                                "justifyContent": "space-between",
+                                "backgroundColor": "#FFFFFF",
+                                "borderRadius": 10.714285714285714,
+                                "minWidth": 203.57142857142856,
+                                "paddingBottom": 25.714285714285715,
+                                "paddingLeft": 25.714285714285715,
+                                "paddingRight": 25.714285714285715,
+                                "paddingTop": 25.714285714285715,
                               },
                             ]
                           }
                         >
-                          <Text
-                            allowFontScaling={false}
-                            lib="Ionicons"
+                          <View
                             style={
                               Array [
                                 Object {
-                                  "color": "#A1A1A1",
-                                  "fontSize": 12,
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
                                 },
+                              ]
+                            }
+                          >
+                            <Text
+                              allowFontScaling={false}
+                              lib="Ionicons"
+                              style={
                                 Array [
                                   Object {
-                                    "fontSize": 24,
+                                    "color": "#A1A1A1",
+                                    "fontSize": 12,
                                   },
-                                ],
-                                Object {
-                                  "fontFamily": "Ionicons",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                                Object {},
-                              ]
-                            }
-                            testID="OptionsCard:IconCard"
-                          >
-                            
-                          </Text>
-                        </View>
-                        <View
-                          style={
-                            Array [
-                              Object {
-                                "marginTop": 29.426470588235293,
-                              },
-                            ]
-                          }
-                        >
-                          <Text
+                                  Array [
+                                    Object {
+                                      "fontSize": 24,
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "Ionicons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                  Object {},
+                                ]
+                              }
+                              testID="OptionsCard:IconCard"
+                            >
+                              
+                            </Text>
+                          </View>
+                          <View
                             style={
                               Array [
-                                Object {},
                                 Object {
-                                  "color": "#A1A1A1",
-                                  "fontFamily": "Quicksand-Regular",
-                                  "fontSize": 20,
-                                  "fontWeight": "normal",
+                                  "marginTop": 29.426470588235293,
                                 },
                               ]
                             }
-                            testID="OptionsCard:Title"
                           >
-                            Comunicados
-                          </Text>
+                            <Text
+                              style={
+                                Array [
+                                  Object {},
+                                  Object {
+                                    "color": "#A1A1A1",
+                                    "fontFamily": "Quicksand-Regular",
+                                    "fontSize": 20,
+                                    "fontWeight": "normal",
+                                  },
+                                ]
+                              }
+                              testID="OptionsCard:Title"
+                            >
+                              Comunicados
+                            </Text>
+                          </View>
                         </View>
                       </View>
                     </View>
                     <View
-                      accessible={true}
-                      focusable={true}
-                      onClick={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
+                      onLayout={[Function]}
                       style={
                         Array [
                           Object {
-                            "borderRadius": 10.714285714285714,
-                            "marginRight": 32.14285714285714,
+                            "flexDirection": "row",
                           },
+                          null,
                         ]
                       }
                     >
                       <View
-                        elevation={6}
+                        accessible={true}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Array [
                             Object {
-                              "backgroundColor": "#FFFFFF",
                               "borderRadius": 10.714285714285714,
-                              "minWidth": 203.57142857142856,
-                              "paddingBottom": 25.714285714285715,
-                              "paddingLeft": 25.714285714285715,
-                              "paddingRight": 25.714285714285715,
-                              "paddingTop": 25.714285714285715,
+                              "marginRight": 32.14285714285714,
                             },
                           ]
                         }
                       >
                         <View
+                          elevation={6}
                           style={
                             Array [
                               Object {
-                                "flexDirection": "row",
-                                "justifyContent": "space-between",
+                                "backgroundColor": "#FFFFFF",
+                                "borderRadius": 10.714285714285714,
+                                "minWidth": 203.57142857142856,
+                                "paddingBottom": 25.714285714285715,
+                                "paddingLeft": 25.714285714285715,
+                                "paddingRight": 25.714285714285715,
+                                "paddingTop": 25.714285714285715,
                               },
                             ]
                           }
                         >
-                          <Text
-                            allowFontScaling={false}
-                            lib="Feather"
+                          <View
                             style={
                               Array [
                                 Object {
-                                  "color": "#A1A1A1",
-                                  "fontSize": 12,
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
                                 },
+                              ]
+                            }
+                          >
+                            <Text
+                              allowFontScaling={false}
+                              lib="Feather"
+                              style={
                                 Array [
                                   Object {
-                                    "fontSize": 24,
+                                    "color": "#A1A1A1",
+                                    "fontSize": 12,
                                   },
-                                ],
-                                Object {
-                                  "fontFamily": "Feather",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                                Object {},
-                              ]
-                            }
-                            testID="OptionsCard:IconCard"
-                          >
-                            
-                          </Text>
-                          <Text
+                                  Array [
+                                    Object {
+                                      "fontSize": 24,
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "Feather",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                  Object {},
+                                ]
+                              }
+                              testID="OptionsCard:IconCard"
+                            >
+                              
+                            </Text>
+                            <Text
+                              style={
+                                Array [
+                                  Object {},
+                                  Object {
+                                    "backgroundColor": "#7D42D7",
+                                    "borderRadius": 100,
+                                    "color": "#ffffff",
+                                    "fontFamily": "Quicksand-Regular",
+                                    "fontSize": 18,
+                                    "fontWeight": "normal",
+                                    "paddingBottom": 3.2142857142857144,
+                                    "paddingLeft": 12.857142857142858,
+                                    "paddingRight": 12.857142857142858,
+                                    "paddingTop": 3.2142857142857144,
+                                  },
+                                ]
+                              }
+                              testID="OptionsCard:Counter"
+                            >
+                              3
+                            </Text>
+                          </View>
+                          <View
                             style={
                               Array [
-                                Object {},
                                 Object {
-                                  "backgroundColor": "#7D42D7",
-                                  "borderRadius": 100,
-                                  "color": "#ffffff",
-                                  "fontFamily": "Quicksand-Regular",
-                                  "fontSize": 18,
-                                  "fontWeight": "normal",
-                                  "paddingBottom": 3.2142857142857144,
-                                  "paddingLeft": 12.857142857142858,
-                                  "paddingRight": 12.857142857142858,
-                                  "paddingTop": 3.2142857142857144,
+                                  "marginTop": 29.426470588235293,
                                 },
                               ]
                             }
-                            testID="OptionsCard:Counter"
                           >
-                            3
-                          </Text>
-                        </View>
-                        <View
-                          style={
-                            Array [
-                              Object {
-                                "marginTop": 29.426470588235293,
-                              },
-                            ]
-                          }
-                        >
-                          <Text
-                            style={
-                              Array [
-                                Object {},
-                                Object {
-                                  "color": "#A1A1A1",
-                                  "fontFamily": "Quicksand-Regular",
-                                  "fontSize": 20,
-                                  "fontWeight": "normal",
-                                },
-                              ]
-                            }
-                            testID="OptionsCard:Title"
-                          >
-                            Eventos
-                          </Text>
+                            <Text
+                              style={
+                                Array [
+                                  Object {},
+                                  Object {
+                                    "color": "#A1A1A1",
+                                    "fontFamily": "Quicksand-Regular",
+                                    "fontSize": 20,
+                                    "fontWeight": "normal",
+                                  },
+                                ]
+                              }
+                              testID="OptionsCard:Title"
+                            >
+                              Eventos
+                            </Text>
+                          </View>
                         </View>
                       </View>
                     </View>
@@ -1405,113 +1492,177 @@ exports[`Test App 1`] = `
                           "paddingVertical": 29.426470588235293,
                         }
                       }
+                      data={
+                        Array [
+                          "https://play-lh.googleusercontent.com/gJvLrKo1KmlZodvBBwcUBeHVra5kuSnCa9T9-o5AmzknJhatzRRNMTHLoHJQmk03xHQ=s180-rw",
+                          "https://play-lh.googleusercontent.com/d85SyM3_rjiym7bad_vP2_AA3J0WV4PnnzF0Pm_zU7S5CseZ7XVkI83ibRlEY-NCsvP4=s180-rw",
+                          "https://play-lh.googleusercontent.com/9f2xzforyaQz1yoRSiS5Mj5r2z7gh2FCzWAl3Uo-2wUrS2bsDWHSEyq5zDylp1gndw=s180-rw",
+                        ]
+                      }
+                      disableVirtualization={false}
+                      getItem={[Function]}
+                      getItemCount={[Function]}
                       horizontal={true}
+                      initialNumToRender={10}
+                      keyExtractor={[Function]}
+                      maxToRenderPerBatch={10}
+                      onContentSizeChange={[Function]}
+                      onEndReachedThreshold={2}
+                      onLayout={[Function]}
+                      onMomentumScrollEnd={[Function]}
+                      onScroll={[Function]}
+                      onScrollBeginDrag={[Function]}
+                      onScrollEndDrag={[Function]}
+                      removeClippedSubviews={false}
+                      renderItem={[Function]}
+                      scrollEventThrottle={50}
                       showsHorizontalScrollIndicator={false}
+                      stickyHeaderIndices={Array []}
                       style={
                         Array [
                           Object {},
                         ]
                       }
+                      testID="Home:ShortcutList"
+                      updateCellsBatchingPeriod={50}
+                      viewabilityConfigCallbackPairs={Array []}
+                      windowSize={21}
                     >
                       <View>
                         <View
-                          elevation={6}
+                          onLayout={[Function]}
                           style={
                             Array [
                               Object {
-                                "borderRadius": 21.428571428571427,
-                                "height": 117.85714285714285,
-                                "marginRight": 32.14285714285714,
-                                "overflow": "hidden",
-                                "width": 117.85714285714285,
+                                "flexDirection": "row",
                               },
+                              null,
                             ]
                           }
                         >
-                          <Image
-                            resizeMethod="resize"
-                            resizeMode="cover"
-                            source={
-                              Object {
-                                "uri": "https://play-lh.googleusercontent.com/gJvLrKo1KmlZodvBBwcUBeHVra5kuSnCa9T9-o5AmzknJhatzRRNMTHLoHJQmk03xHQ=s180-rw",
-                              }
-                            }
+                          <View
+                            elevation={6}
                             style={
                               Array [
                                 Object {
-                                  "height": "100%",
-                                  "width": "100%",
+                                  "borderRadius": 21.428571428571427,
+                                  "height": 117.85714285714285,
+                                  "marginRight": 32.14285714285714,
+                                  "overflow": "hidden",
+                                  "width": 117.85714285714285,
                                 },
                               ]
                             }
-                            testID="ShortcutCard:Image"
-                          />
+                          >
+                            <Image
+                              resizeMethod="resize"
+                              resizeMode="cover"
+                              source={
+                                Object {
+                                  "uri": "https://play-lh.googleusercontent.com/gJvLrKo1KmlZodvBBwcUBeHVra5kuSnCa9T9-o5AmzknJhatzRRNMTHLoHJQmk03xHQ=s180-rw",
+                                }
+                              }
+                              style={
+                                Array [
+                                  Object {
+                                    "height": "100%",
+                                    "width": "100%",
+                                  },
+                                ]
+                              }
+                              testID="ShortcutCard:Image"
+                            />
+                          </View>
                         </View>
                         <View
-                          elevation={6}
+                          onLayout={[Function]}
                           style={
                             Array [
                               Object {
-                                "borderRadius": 21.428571428571427,
-                                "height": 117.85714285714285,
-                                "marginRight": 32.14285714285714,
-                                "overflow": "hidden",
-                                "width": 117.85714285714285,
+                                "flexDirection": "row",
                               },
+                              null,
                             ]
                           }
                         >
-                          <Image
-                            resizeMethod="resize"
-                            resizeMode="cover"
-                            source={
-                              Object {
-                                "uri": "https://play-lh.googleusercontent.com/d85SyM3_rjiym7bad_vP2_AA3J0WV4PnnzF0Pm_zU7S5CseZ7XVkI83ibRlEY-NCsvP4=s180-rw",
-                              }
-                            }
+                          <View
+                            elevation={6}
                             style={
                               Array [
                                 Object {
-                                  "height": "100%",
-                                  "width": "100%",
+                                  "borderRadius": 21.428571428571427,
+                                  "height": 117.85714285714285,
+                                  "marginRight": 32.14285714285714,
+                                  "overflow": "hidden",
+                                  "width": 117.85714285714285,
                                 },
                               ]
                             }
-                            testID="ShortcutCard:Image"
-                          />
+                          >
+                            <Image
+                              resizeMethod="resize"
+                              resizeMode="cover"
+                              source={
+                                Object {
+                                  "uri": "https://play-lh.googleusercontent.com/d85SyM3_rjiym7bad_vP2_AA3J0WV4PnnzF0Pm_zU7S5CseZ7XVkI83ibRlEY-NCsvP4=s180-rw",
+                                }
+                              }
+                              style={
+                                Array [
+                                  Object {
+                                    "height": "100%",
+                                    "width": "100%",
+                                  },
+                                ]
+                              }
+                              testID="ShortcutCard:Image"
+                            />
+                          </View>
                         </View>
                         <View
-                          elevation={6}
+                          onLayout={[Function]}
                           style={
                             Array [
                               Object {
-                                "borderRadius": 21.428571428571427,
-                                "height": 117.85714285714285,
-                                "marginRight": 32.14285714285714,
-                                "overflow": "hidden",
-                                "width": 117.85714285714285,
+                                "flexDirection": "row",
                               },
+                              null,
                             ]
                           }
                         >
-                          <Image
-                            resizeMethod="resize"
-                            resizeMode="cover"
-                            source={
-                              Object {
-                                "uri": "https://play-lh.googleusercontent.com/9f2xzforyaQz1yoRSiS5Mj5r2z7gh2FCzWAl3Uo-2wUrS2bsDWHSEyq5zDylp1gndw=s180-rw",
-                              }
-                            }
+                          <View
+                            elevation={6}
                             style={
                               Array [
                                 Object {
-                                  "height": "100%",
-                                  "width": "100%",
+                                  "borderRadius": 21.428571428571427,
+                                  "height": 117.85714285714285,
+                                  "marginRight": 32.14285714285714,
+                                  "overflow": "hidden",
+                                  "width": 117.85714285714285,
                                 },
                               ]
                             }
-                            testID="ShortcutCard:Image"
-                          />
+                          >
+                            <Image
+                              resizeMethod="resize"
+                              resizeMode="cover"
+                              source={
+                                Object {
+                                  "uri": "https://play-lh.googleusercontent.com/9f2xzforyaQz1yoRSiS5Mj5r2z7gh2FCzWAl3Uo-2wUrS2bsDWHSEyq5zDylp1gndw=s180-rw",
+                                }
+                              }
+                              style={
+                                Array [
+                                  Object {
+                                    "height": "100%",
+                                    "width": "100%",
+                                  },
+                                ]
+                              }
+                              testID="ShortcutCard:Image"
+                            />
+                          </View>
                         </View>
                       </View>
                     </RCTScrollView>

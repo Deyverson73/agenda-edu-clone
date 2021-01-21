@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { FlatList } from 'react-native';
 import { Text } from '../../Components/Global';
 import { s, vs } from 'react-native-size-matters';
 import { rp } from '../../Utils';
@@ -67,7 +68,7 @@ export const Indicators = styled(Pagination).attrs(({ theme }) => ({
   inactiveDotScale: 1,
 }))``;
 
-export const Options = styled.ScrollView.attrs({
+export const OptionsList = styled(FlatList as new () => FlatList).attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
   contentContainerStyle: {
@@ -97,7 +98,7 @@ export const ShortcutTitle = styled(Text)`
   margin-left: ${s(15)}px;
 `;
 
-export const Shortcuts = styled.ScrollView.attrs({
+export const ShortcutsList = styled(FlatList as new () => FlatList).attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
   contentContainerStyle: {
