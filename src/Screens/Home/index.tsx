@@ -51,6 +51,10 @@ const data: IEventCard[] = [
 
 export const SLIDER_WIDTH = Dimensions.get('window').width;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.85);
+const userData = {
+  image_url:
+    'https://blush.design/api/download?shareUri=q_Ap_5y_i&s=0%7Ed4a181&w=800&h=800&fm=png',
+};
 
 const Home = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -70,7 +74,10 @@ const Home = () => {
       <Main>
         <AvatarContainer>
           <UserAvatar
-            source={require('../../Assets/Images/avatar.png')}
+            testID="Home:Avatar"
+            source={{
+              uri: userData.image_url,
+            }}
             resizeMethod="resize"
             resizeMode="cover"
           />
@@ -79,6 +86,7 @@ const Home = () => {
         <Suggestion>Confira a sua agenda de hoje!</Suggestion>
 
         <Carousel
+          testID="Home:Carrousel"
           data={data}
           renderItem={renderEvent}
           sliderWidth={SLIDER_WIDTH}
@@ -99,7 +107,7 @@ const Home = () => {
         <OptionsCard
           item={{
             icon: { lib: 'Ionicons', name: 'megaphone-outline' },
-            counter: 4,
+            counter: 0,
             title: 'Comunicados',
           }}
         />

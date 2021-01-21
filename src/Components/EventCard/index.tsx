@@ -23,15 +23,16 @@ const EventCard = ({ item }: { item: IEventCard }) => {
   return (
     <Container>
       <EventImage
+        testID="EventCard:Image"
         resizeMethod="resize"
         resizeMode="cover"
         source={{ uri: item.image_url }}
       />
       <Gradient>
         <DetailsContainer>
-          <Category>{item.category}</Category>
-          <Title>{item.title}</Title>
-          <Infos>
+          <Category testID="EventCard:Category">{item.category}</Category>
+          <Title testID="EventCard:Title">{item.title}</Title>
+          <Infos testID="EventCard:Infos">
             <Calendar /> {item.info}
           </Infos>
         </DetailsContainer>

@@ -3,12 +3,18 @@ import { Text, Icon } from '../Global';
 import { s, vs } from 'react-native-size-matters';
 import { rp } from '../../Utils';
 
-export const Container = styled.View.attrs({
+export const Container = styled.TouchableHighlight.attrs({
+  activeOpacity: 1,
+})`
+  margin-right: ${s(15)}px;
+  border-radius: ${s(5)}px;
+`;
+
+export const Content = styled.View.attrs({
   elevation: 6,
 })`
   min-width: ${s(95)}px;
   padding: ${s(12)}px;
-  margin-right: ${s(15)}px;
   border-radius: ${s(5)}px;
   background-color: ${({ theme }) => theme.background};
 `;
@@ -17,6 +23,7 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
 `;
+
 export const Footer = styled.View`
   margin-top: ${vs(15)}px;
 `;
