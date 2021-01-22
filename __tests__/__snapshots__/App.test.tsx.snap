@@ -89,6 +89,39 @@ exports[`App Snapshot 1`] = `
               }
             >
               <View>
+                <RCTSwitch
+                  accessibilityRole="switch"
+                  onChange={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  onTintColor="#F1EBFB"
+                  style={
+                    Array [
+                      Object {
+                        "height": 31,
+                        "width": 51,
+                      },
+                      Array [
+                        Array [
+                          Object {
+                            "transform": Array [
+                              Object {
+                                "translateY": -19.61764705882353,
+                              },
+                            ],
+                          },
+                        ],
+                        Object {
+                          "backgroundColor": "#3e3e3e",
+                          "borderRadius": 16,
+                        },
+                      ],
+                    ]
+                  }
+                  thumbTintColor="#f4f3f4"
+                  tintColor="#454545"
+                  value={false}
+                />
                 <View
                   style={
                     Array [
@@ -104,7 +137,6 @@ exports[`App Snapshot 1`] = `
                   <View
                     elevation={15}
                     onLayout={[Function]}
-                    onTouchEnd={[Function]}
                     style={
                       Array [
                         Object {
