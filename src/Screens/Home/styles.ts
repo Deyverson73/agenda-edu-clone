@@ -13,6 +13,10 @@ export const Container = styled.ScrollView.attrs({
   background-color: ${({ theme }) => theme.primary};
 `;
 
+export const Switch = styled.Switch`
+  transform: translateY(${vs(-10)}px);
+`;
+
 export const StatusBar = styled.StatusBar.attrs(({ theme }) => ({
   backgroundColor: theme.primary,
 }))``;

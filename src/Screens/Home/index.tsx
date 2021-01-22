@@ -9,6 +9,7 @@ import { user, events, options, shortcuts } from '../../Database';
 
 import {
   Container,
+  Switch,
   StatusBar,
   Main,
   AvatarContainer,
@@ -70,9 +71,15 @@ const Home = () => {
   return (
     <Container>
       <StatusBar />
+      <Switch
+        trackColor={{ false: '#454545', true: '#F1EBFB' }}
+        thumbColor={theme === 'dark' ? '#454545' : '#f4f3f4'}
+        ios_backgroundColor="#3e3e3e"
+        onValueChange={() => handleTheme(theme)}
+        value={theme === 'dark'}
+      />
       <Main>
         <AvatarContainer
-          onTouchEnd={() => handleTheme(theme)}
           onLayout={onLayout}
           style={{ marginTop: -(avatarHeight / 2) }}>
           <UserAvatar
