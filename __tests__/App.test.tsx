@@ -4,6 +4,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
 import colors from '../src/Constants/Colors';
 import renderer from 'react-test-renderer';
+import fetch from 'node-fetch';
 import App from '../App';
 import { eventTest } from './EventCard.test';
 import { optionTest } from './OptionCard.test';
@@ -22,6 +23,14 @@ const tree = renderer.create(
 
 test('App Snapshot', () => {
   expect(tree.toJSON()).toMatchSnapshot();
+});
+
+test('App Avatar', async () => {
+  const image = tree.root.findByProps({ testID: 'Home:Avatar' }).props;
+  await fetch(image.source.uri, { method: 'GET' }).then(async (response) => {
+    const result = await response.blob();
+    expect(result.type).toContain('image');
+  });
 });
 
 test('App Carrousel Test', async () => {
