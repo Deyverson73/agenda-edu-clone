@@ -25,7 +25,7 @@ test('App Snapshot', () => {
   expect(tree.toJSON()).toMatchSnapshot();
 });
 
-test('App Avatar', async () => {
+test('App Avatar Test', async () => {
   const image = tree.root.findByProps({ testID: 'Home:Avatar' }).props;
   await fetch(image.source.uri, { method: 'GET' }).then(async (response) => {
     const result = await response.blob();
