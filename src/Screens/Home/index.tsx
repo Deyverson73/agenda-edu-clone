@@ -28,6 +28,12 @@ export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.85);
 
 const Home = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
+  const [avatarHeight, setAvatarHeight] = useState<number>(0);
+
+  const onLayout = (event) => {
+    const { height } = event.nativeEvent.layout;
+    setAvatarHeight(height);
+  };
 
   const renderEvent = ({ item }: { item: IEvent }) => <EventCard item={item} />;
 
@@ -52,7 +58,9 @@ const Home = () => {
     <Container>
       <StatusBar />
       <Main>
-        <AvatarContainer>
+        <AvatarContainer
+          onLayout={onLayout}
+          style={{ marginTop: -(avatarHeight / 2) }}>
           <UserAvatar
             testID="Home:Avatar"
             source={{

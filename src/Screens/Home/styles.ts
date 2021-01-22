@@ -27,7 +27,6 @@ export const Main = styled.View`
 export const AvatarContainer = styled.View.attrs({
   elevation: 15,
 })`
-  margin-top: ${s(-35)}px;
   border-radius: 50px;
   overflow: hidden;
   background-color: ${({ theme }) => theme.background};

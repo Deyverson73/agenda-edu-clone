@@ -44,6 +44,7 @@ export default function App() {
             minHeight: vs(58),
             elevation: 0,
             borderTopColor: 'transparent',
+            backgroundColor: theme.backgroundBar,
           },
           showLabel: false,
         }}>

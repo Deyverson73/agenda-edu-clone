@@ -103,13 +103,16 @@ exports[`App Snapshot 1`] = `
                 >
                   <View
                     elevation={15}
+                    onLayout={[Function]}
                     style={
                       Array [
                         Object {
                           "backgroundColor": "#FFFFFF",
                           "borderRadius": 50,
-                          "marginTop": -75,
                           "overflow": "hidden",
+                        },
+                        Object {
+                          "marginTop": -0,
                         },
                       ]
                     }
@@ -1097,7 +1100,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#FFFFFF",
+                                "backgroundColor": "#F1EBFB",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
@@ -1231,7 +1234,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#FFFFFF",
+                                "backgroundColor": "#F1EBFB",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
@@ -1343,7 +1346,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#FFFFFF",
+                                "backgroundColor": "#F1EBFB",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
@@ -1678,7 +1681,7 @@ exports[`App Snapshot 1`] = `
       pointerEvents="auto"
       style={
         Object {
-          "backgroundColor": "rgb(255, 255, 255)",
+          "backgroundColor": "#ffffff",
           "borderTopColor": "transparent",
           "borderTopWidth": 0.5,
           "bottom": 0,
