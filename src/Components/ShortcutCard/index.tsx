@@ -15,4 +15,12 @@ const ShortcutCard = ({ image_url }: { image_url: string }) => {
   );
 };
 
-export default ShortcutCard;
+const verifyUpdate = (prevProps, nextProps) => {
+  if (prevProps.image_url === nextProps.image_url) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export default React.memo(ShortcutCard, verifyUpdate);

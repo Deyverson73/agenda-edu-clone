@@ -44,4 +44,12 @@ const OptionsCard = ({ item }: { item: IOptions }) => {
   );
 };
 
-export default OptionsCard;
+const verifyUpdate = (prevProps, nextProps) => {
+  if (prevProps.item === nextProps.item) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export default React.memo(OptionsCard, verifyUpdate);

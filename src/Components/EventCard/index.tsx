@@ -41,4 +41,12 @@ const EventCard = ({ item }: { item: IEvent }) => {
   );
 };
 
-export default EventCard;
+const verifyUpdate = (prevProps, nextProps) => {
+  if (prevProps.item === nextProps.item) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export default React.memo(EventCard, verifyUpdate);
