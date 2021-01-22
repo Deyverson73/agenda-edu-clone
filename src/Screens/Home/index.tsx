@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Dimensions } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 import Carousel from 'react-native-snap-carousel';
 import EventCard, { IEvent } from '../../Components/EventCard';
 import OptionsCard, { IOptions } from '../../Components/OptionsCard';
@@ -27,8 +28,17 @@ export const SLIDER_WIDTH = Dimensions.get('window').width;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.85);
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const theme = useSelector(({ MainReducer }) => MainReducer.theme);
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
   const [avatarHeight, setAvatarHeight] = useState<number>(0);
+
+  const handleTheme = (newTheme: string) => {
+    dispatch({
+      type: 'THEME.CHANGE',
+      theme: newTheme === 'dark' ? 'light' : 'dark',
+    });
+  };
 
   const onLayout = (event) => {
     const { height } = event.nativeEvent.layout;
@@ -59,6 +69,7 @@ const Home = () => {
       <StatusBar />
       <Main>
         <AvatarContainer
+          onTouchEnd={() => handleTheme(theme)}
           onLayout={onLayout}
           style={{ marginTop: -(avatarHeight / 2) }}>
           <UserAvatar

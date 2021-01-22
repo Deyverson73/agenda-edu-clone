@@ -104,6 +104,7 @@ exports[`App Snapshot 1`] = `
                   <View
                     elevation={15}
                     onLayout={[Function]}
+                    onTouchEnd={[Function]}
                     style={
                       Array [
                         Object {

@@ -19,7 +19,7 @@ const events: IEvent[] = [
       'https://brasil.estadao.com.br/blogs/vencer-limites/wp-content/uploads/sites/189/2018/12/DanteGEN_Explorum01_20dezembro2018_blogVencerLimites.jpeg',
     category: 'Eventos',
     title: 'Mostra Científica',
-    info: '26 de Janeiro às 07:30',
+    info: '25 de Janeiro às 07:30',
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ const events: IEvent[] = [
       'https://brstatic.guiainfantil.com/uploads/Esportes_e_artes/crianas-seguras-na-piscina_A.jpg',
     category: 'Eventos',
     title: 'XVII Olimpíadas escolares',
-    info: '25 de Janeiro às 14:00',
+    info: '26 de Janeiro às 14:00',
   },
   {
     id: '3',

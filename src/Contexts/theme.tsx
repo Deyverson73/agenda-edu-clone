@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import colors, { Colors } from '../Constants/Colors';
 
@@ -14,8 +15,9 @@ const theme = {
 
 type ThemeProps = { children?: React.ReactNode };
 
-const Theme = ({ children }: ThemeProps) => (
-  <ThemeProvider theme={theme.light}>{children}</ThemeProvider>
-);
+const Theme = ({ children }: ThemeProps) => {
+  const currentTheme = useSelector(({ MainReducer }) => MainReducer.theme);
+  return <ThemeProvider theme={theme[currentTheme]}>{children}</ThemeProvider>;
+};
 
 export default Theme;
