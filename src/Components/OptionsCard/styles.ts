@@ -16,7 +16,7 @@ export const Content = styled.View.attrs({
   min-width: ${s(95)}px;
   padding: ${s(12)}px;
   border-radius: ${s(5)}px;
-  background-color: ${({ theme }) => theme.backgroundCard};
+  background-color: ${({ theme }) => theme.backgroundOptions};
 `;
 
 export const Header = styled.View`

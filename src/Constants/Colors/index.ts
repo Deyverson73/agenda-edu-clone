@@ -6,6 +6,7 @@ export interface Colors {
   background: string;
   backgroundCard: string;
   backgroundBar: string;
+  backgroundOptions: string;
 }
 
 const colors = {
@@ -17,6 +18,7 @@ const colors = {
     background: '#FFFFFF',
     backgroundCard: '#F1EBFB',
     backgroundBar: '#ffffff',
+    backgroundOptions: '#ffffff',
   } as Colors,
   dark: {
     primary: '#7D42D7',
@@ -26,6 +28,7 @@ const colors = {
     background: '#323232',
     backgroundCard: '#454545',
     backgroundBar: '#323232',
+    backgroundOptions: '#454545',
   } as Colors,
 };
 

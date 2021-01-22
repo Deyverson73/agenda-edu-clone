@@ -1133,7 +1133,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#F1EBFB",
+                                "backgroundColor": "#ffffff",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
@@ -1267,7 +1267,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#F1EBFB",
+                                "backgroundColor": "#ffffff",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
@@ -1379,7 +1379,7 @@ exports[`App Snapshot 1`] = `
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#F1EBFB",
+                                "backgroundColor": "#ffffff",
                                 "borderRadius": 10.714285714285714,
                                 "minWidth": 203.57142857142856,
                                 "paddingBottom": 25.714285714285715,
