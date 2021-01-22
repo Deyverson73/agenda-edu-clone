@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { Dimensions } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import Carousel from 'react-native-snap-carousel';
@@ -34,15 +34,12 @@ const Home = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
   const [avatarHeight, setAvatarHeight] = useState<number>(0);
 
-  const handleTheme = useCallback(
-    (newTheme: string) => {
-      dispatch({
-        type: 'SAGA.THEME.CHANGE',
-        theme: newTheme === 'dark' ? 'light' : 'dark',
-      });
-    },
-    [dispatch],
-  );
+  const handleTheme = (newTheme: string) => {
+    dispatch({
+      type: 'SAGA.THEME.CHANGE',
+      theme: newTheme === 'dark' ? 'light' : 'dark',
+    });
+  };
 
   const onLayout = (event) => {
     const { height } = event.nativeEvent.layout;
