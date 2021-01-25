@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { vs } from 'react-native-size-matters';
 import { useTheme } from 'styled-components/native';
 import HomeScreen from '../Screens/Home';
-import { IconCard } from './styles';
+import { IconContainer, IconCard } from './styles';
 
 function NotificationsScreen() {
   return (
@@ -53,11 +53,13 @@ export default function App() {
           component={HomeScreen}
           options={{
             tabBarIcon: ({ focused }) => (
-              <IconCard
-                lib="MaterialCommunityIcons"
-                name={focused ? 'home' : 'home-outline'}
-                focused={focused}
-              />
+              <IconContainer focused={focused}>
+                <IconCard
+                  lib="MaterialCommunityIcons"
+                  name={focused ? 'home' : 'home-outline'}
+                  focused={focused}
+                />
+              </IconContainer>
             ),
           }}
         />
@@ -66,11 +68,13 @@ export default function App() {
           component={NotificationsScreen}
           options={{
             tabBarIcon: ({ focused }) => (
-              <IconCard
-                lib="MaterialCommunityIcons"
-                name={focused ? 'bell' : 'bell-outline'}
-                focused={focused}
-              />
+              <IconContainer focused={focused}>
+                <IconCard
+                  lib="MaterialCommunityIcons"
+                  name={focused ? 'bell' : 'bell-outline'}
+                  focused={focused}
+                />
+              </IconContainer>
             ),
           }}
         />
@@ -79,11 +83,13 @@ export default function App() {
           component={ChatScreen}
           options={{
             tabBarIcon: ({ focused }) => (
-              <IconCard
-                lib="MaterialCommunityIcons"
-                name={focused ? 'chat' : 'chat-outline'}
-                focused={focused}
-              />
+              <IconContainer focused={focused}>
+                <IconCard
+                  lib="MaterialCommunityIcons"
+                  name={focused ? 'chat' : 'chat-outline'}
+                  focused={focused}
+                />
+              </IconContainer>
             ),
           }}
         />
@@ -92,11 +98,13 @@ export default function App() {
           component={MenuScreen}
           options={{
             tabBarIcon: ({ focused }) => (
-              <IconCard
-                lib="MaterialCommunityIcons"
-                name={focused ? 'view-grid' : 'view-grid-outline'}
-                focused={focused}
-              />
+              <IconContainer focused={focused}>
+                <IconCard
+                  lib="MaterialCommunityIcons"
+                  name={focused ? 'view-grid' : 'view-grid-outline'}
+                  focused={focused}
+                />
+              </IconContainer>
             ),
           }}
         />
